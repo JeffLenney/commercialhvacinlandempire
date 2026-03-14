@@ -752,7 +752,7 @@ a {
 
 .footer-grid {
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1fr;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
   gap: 2.5rem;
   max-width: var(--max-width);
   margin: 0 auto 2.5rem;
