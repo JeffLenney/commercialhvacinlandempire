@@ -77,16 +77,14 @@ a {
 }
 
 .site-logo {
-  color: var(--white);
+  display: inline-block;
   text-decoration: none;
-  font-size: 1.3rem;
-  font-weight: 800;
-  letter-spacing: -0.03em;
-  white-space: nowrap;
+  line-height: 0;
 }
 
-.site-logo span {
-  color: var(--slate-blue);
+.site-logo img {
+  height: 44px;
+  width: auto;
 }
 
 .site-nav {
