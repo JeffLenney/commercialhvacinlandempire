@@ -421,11 +421,15 @@ a {
   color: var(--slate-blue-dark);
 }
 
-/* ---------- City Image Cards (Locations Hub) ---------- */
+/* ---------- City Image Cards (Locations Hub + Homepage) ---------- */
 .city-card-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1.75rem;
+}
+
+.city-card-grid--4 {
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .city-card {
@@ -450,6 +454,11 @@ a {
   height: 220px;
   object-fit: cover;
   display: block;
+  transition: transform 0.35s ease;
+}
+
+.city-card:hover .city-card__img {
+  transform: scale(1.05);
 }
 
 .city-card__body {
