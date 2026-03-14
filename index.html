@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Garage Pros OC  -  Orange County's premier garage floor coating specialists. 100% solids epoxy, ArmorClad Industrial System, HOA-approved colors. Irvine, Newport Beach, Anaheim, Fullerton.">
   <title>Garage Pros OC | Premium Garage Floor Coating  -  Orange County, CA</title>
-  <link rel="stylesheet" href="./css/styles.css?v=2">
+  <link rel="stylesheet" href="./css/styles.css?v=3">
 </head>
 <body>
 
@@ -211,6 +211,73 @@
       </div>
     </section>
 
+    <!-- ===================== FAQ ===================== -->
+    <section class="section section--alt">
+      <div class="container">
+        <p class="section-label">Got Questions?</p>
+        <h2 class="section-title">Frequently Asked Questions about OC Garage Coatings</h2>
+
+        <dl class="faq-list">
+
+          <div class="faq-item">
+            <dt>
+              <button class="faq-question" aria-expanded="false">
+                How long does the installation take?
+              </button>
+            </dt>
+            <dd class="faq-answer" hidden>
+              Our expert network typically completes most residential garages in just one to two days. Thanks to the fast-curing properties of the ArmorClad system, you can usually walk on your new floor within 24 hours.
+            </dd>
+          </div>
+
+          <div class="faq-item">
+            <dt>
+              <button class="faq-question" aria-expanded="false">
+                Will my floor peel under hot tires?
+              </button>
+            </dt>
+            <dd class="faq-answer" hidden>
+              No. Unlike water-based DIY kits, we use 100% solids epoxy and industrial diamond-grinding. This creates a permanent bond that is guaranteed to resist hot-tire pick-up.
+            </dd>
+          </div>
+
+          <div class="faq-item">
+            <dt>
+              <button class="faq-question" aria-expanded="false">
+                Are your colors HOA-approved?
+              </button>
+            </dt>
+            <dd class="faq-answer" hidden>
+              Yes. We offer a curated selection of neutral flake blends specifically designed to meet the strict architectural guidelines of Irvine, Newport Beach, and other OC planned communities.
+            </dd>
+          </div>
+
+          <div class="faq-item">
+            <dt>
+              <button class="faq-question" aria-expanded="false">
+                Do I need to clear out my garage?
+              </button>
+            </dt>
+            <dd class="faq-answer" hidden>
+              Yes, the floor must be completely clear for the diamond-grinding process. Many of our local partners can recommend temporary storage solutions or on-site pods if needed.
+            </dd>
+          </div>
+
+          <div class="faq-item">
+            <dt>
+              <button class="faq-question" aria-expanded="false">
+                How do I clean my new ArmorClad floor?
+              </button>
+            </dt>
+            <dd class="faq-answer" hidden>
+              Maintenance is simple. Because the surface is non-porous and chemical-resistant, a simple sweep and an occasional mop with mild soap and water will keep it looking showroom-new.
+            </dd>
+          </div>
+
+        </dl>
+      </div>
+    </section>
+
     <!-- ===================== CTA BANNER ===================== -->
     <section class="cta-banner">
       <div class="container">
@@ -271,5 +338,15 @@
     </div>
   </footer>
 
+  <script>
+    document.querySelectorAll('.faq-question').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        var answer = btn.closest('.faq-item').querySelector('.faq-answer');
+        var open = btn.getAttribute('aria-expanded') === 'true';
+        btn.setAttribute('aria-expanded', open ? 'false' : 'true');
+        open ? answer.setAttribute('hidden', '') : answer.removeAttribute('hidden');
+      });
+    });
+  </script>
 </body>
 </html>
