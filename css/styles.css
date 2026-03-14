@@ -421,6 +421,72 @@ a {
   color: var(--slate-blue-dark);
 }
 
+/* ---------- City Image Cards (Locations Hub) ---------- */
+.city-card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.75rem;
+}
+
+.city-card {
+  display: flex;
+  flex-direction: column;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.city-card:hover {
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-3px);
+}
+
+.city-card__img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+.city-card__body {
+  padding: 1.5rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.city-card__title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--charcoal);
+  margin: 0 0 0.5rem;
+}
+
+.city-card__desc {
+  color: var(--text-muted);
+  font-size: 0.925rem;
+  line-height: 1.65;
+  margin: 0 0 1.25rem;
+  flex: 1;
+}
+
+.city-card__cta {
+  display: inline-block;
+  color: var(--slate-blue);
+  font-size: 0.875rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+.city-card__cta::after {
+  content: " →";
+}
+
 /* ---------- Product Feature Block ---------- */
 .product-feature {
   display: grid;
@@ -939,6 +1005,10 @@ a {
   .card-grid,
   .card-grid--4,
   .card-grid--2 {
+    grid-template-columns: 1fr;
+  }
+
+  .city-card-grid {
     grid-template-columns: 1fr;
   }
 
