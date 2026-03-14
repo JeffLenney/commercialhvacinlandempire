@@ -170,6 +170,11 @@ a {
 .location-hero {
   position: relative;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  min-height: 520px;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 .location-hero__bg {
