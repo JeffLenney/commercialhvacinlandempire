@@ -112,7 +112,7 @@
           <div>
             <p class="section-label">Request a Quote</p>
             <h2 class="section-title">Tell Us About Your Project</h2>
-            <p style="color:var(--text-muted);margin-bottom:2rem;line-height:1.7">Fill out the form below and a specialist will contact you within one business day to schedule your free on-site assessment. All fields marked with * are required.</p>
+            <p style="color:var(--text-muted);margin-bottom:2rem;line-height:1.7">Fill out the form below and we will respond to your inquiry via email within 24 hours to schedule your free on-site assessment. All fields marked with * are required.</p>
 
             <form class="form-wrap" method="post" action="#" style="border:none;box-shadow:none;padding:0">
               <div class="form-row">
@@ -121,8 +121,8 @@
                   <input type="text" id="full-name" name="full_name" placeholder="Jane Smith" required autocomplete="name">
                 </div>
                 <div class="form-group">
-                  <label for="phone">Phone Number *</label>
-                  <input type="tel" id="phone" name="phone" placeholder="(555) 555-5555" required autocomplete="tel">
+                  <label for="phone">Phone Number <span style="font-weight:400;color:var(--text-muted)">(optional)</span></label>
+                  <input type="tel" id="phone" name="phone" placeholder="(555) 555-5555" autocomplete="tel">
                 </div>
               </div>
 
@@ -132,8 +132,8 @@
                   <input type="text" id="city" name="city" placeholder="e.g. Irvine, Newport Beach…" required autocomplete="address-level2">
                 </div>
                 <div class="form-group">
-                  <label for="email">Email Address</label>
-                  <input type="email" id="email" name="email" placeholder="jane@example.com" autocomplete="email">
+                  <label for="email">Email Address *</label>
+                  <input type="email" id="email" name="email" placeholder="jane@example.com" required autocomplete="email">
                 </div>
               </div>
 
@@ -180,8 +180,8 @@
             <div class="highlight-box" style="margin-bottom:1.5rem">
               <h3>What Happens Next</h3>
               <ul>
-                <li>A specialist reviews your request within 1 business day</li>
-                <li>We call to schedule a free on-site slab assessment</li>
+                <li>A specialist reviews your request within 24 hours</li>
+                <li>We respond via email to schedule your free on-site slab assessment</li>
                 <li>Your installer inspects the concrete and discusses color options</li>
                 <li>You receive a written, itemized quote  -  no surprises</li>
                 <li>Schedule installation at your convenience</li>
@@ -201,7 +201,8 @@
 
             <div class="local-feature" style="margin:0">
               <h3>Ready to Start?</h3>
-              <p>Use the form above to request your free quote. We respond to all submissions within one business day.</p>
+              <p>Use the form above or email us directly. We will respond to your inquiry via email within 24 hours.</p>
+              <p style="margin-top:0.75rem"><a href="#" class="contact-email" style="color:var(--slate-blue);font-weight:600"></a></p>
             </div>
           </div>
 
@@ -281,6 +282,7 @@
         <h4>Get Started</h4>
         <ul>
           <li><a href="../contact/">Free Orange County Quote</a></li>
+          <li><a href="#" class="contact-email"></a></li>
         </ul>
         <div class="cta-wrap"><a href="../contact/" class="cta-button footer-cta-btn">Request a Quote</a>
           <p class="cta-trust">ArmorPoxy System Specialist &nbsp;|&nbsp; 100% Solids Guarantee</p>
@@ -293,5 +295,16 @@
     </div>
   </footer>
 
+  <script>
+  (function() {
+    const u = "garageprosoc";
+    const d = "gmail.com";
+    const elements = document.querySelectorAll(".contact-email");
+    elements.forEach(el => {
+      el.href = "mailto:" + u + "@" + d;
+      el.textContent = u + "@" + d;
+    });
+  })();
+  </script>
 </body>
 </html>

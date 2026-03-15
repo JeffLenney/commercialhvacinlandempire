@@ -33,6 +33,7 @@
     "name": "Garage Pros OC",
     "description": "Orange County's premier garage floor coating specialists. Industrial-grade ArmorClad epoxy systems for residential and commercial spaces throughout OC.",
     "url": "https://garageprosoc.com/",
+    "email": "garageprosoc@gmail.com",
     "areaServed": [
       "Irvine, CA",
       "Newport Beach, CA",
@@ -585,6 +586,7 @@
         <h4>Get Started</h4>
         <ul>
           <li><a href="./contact/">Free Orange County Quote</a></li>
+          <li><a href="#" class="contact-email"></a></li>
         </ul>
         <div class="cta-wrap"><a href="./contact/" class="cta-button footer-cta-btn">Request a Quote</a>
           <p class="cta-trust">ArmorPoxy System Specialist &nbsp;|&nbsp; 100% Solids Guarantee</p>
@@ -606,6 +608,17 @@
         open ? answer.setAttribute('hidden', '') : answer.removeAttribute('hidden');
       });
     });
+  </script>
+  <script>
+  (function() {
+    const u = "garageprosoc";
+    const d = "gmail.com";
+    const elements = document.querySelectorAll(".contact-email");
+    elements.forEach(el => {
+      el.href = "mailto:" + u + "@" + d;
+      el.textContent = u + "@" + d;
+    });
+  })();
   </script>
 </body>
 </html>
