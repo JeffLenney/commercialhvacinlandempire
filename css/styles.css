@@ -175,6 +175,7 @@ a {
   min-height: 520px;
   padding-top: 3rem;
   padding-bottom: 3rem;
+  background-image: none;
 }
 
 .location-hero__bg {
