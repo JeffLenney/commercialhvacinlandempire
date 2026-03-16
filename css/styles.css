@@ -1326,6 +1326,12 @@ a {
   text-transform: uppercase;
   color: var(--slate-blue);
   margin-bottom: 0.5rem;
+  text-decoration: none;
+}
+
+.lookbook-project__city:hover {
+  text-decoration: underline;
+  color: var(--slate-blue-dark);
 }
 
 .lookbook-project__title {
