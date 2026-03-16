@@ -1267,6 +1267,111 @@ a {
   background: var(--white);
 }
 
+/* ---------- Lookbook Gallery (Single-Page) ---------- */
+.lookbook-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+  margin-top: 3rem;
+}
+
+.lookbook-project {
+  max-width: 860px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.lookbook-project__img-wrap {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background: linear-gradient(135deg, #6B7280 0%, #4B5563 100%);
+  margin-bottom: 2rem;
+  box-shadow: var(--shadow-lg);
+}
+
+/* Fallback text when project photo is not yet uploaded */
+.lookbook-project__img-wrap::after {
+  content: 'Project Photo Coming Soon';
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font);
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.7);
+  z-index: 0;
+}
+
+.lookbook-project__img-wrap img {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.lookbook-project__city {
+  display: block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--slate-blue);
+  margin-bottom: 0.5rem;
+}
+
+.lookbook-project__title {
+  font-size: clamp(1.4rem, 2.5vw, 1.9rem);
+  font-weight: 700;
+  color: var(--charcoal);
+  line-height: 1.2;
+  margin-bottom: 2rem;
+}
+
+.lookbook-breakdown {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+}
+
+.lookbook-breakdown__label {
+  display: block;
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--slate-blue);
+  padding-bottom: 0.5rem;
+  margin-bottom: 0.75rem;
+  border-bottom: 2px solid var(--slate-blue);
+}
+
+.lookbook-breakdown__item p {
+  font-size: 0.925rem;
+  color: var(--text-muted);
+  line-height: 1.8;
+  margin: 0;
+}
+
+/* Divider between lookbook blocks */
+.lookbook-divider {
+  width: 60px;
+  height: 2px;
+  background: var(--slate-blue);
+  margin: 0 auto;
+  opacity: 0.3;
+}
+
 @media (max-width: 768px) {
   .site-header .container {
     flex-direction: column;
@@ -1310,6 +1415,19 @@ a {
 
   .project-gallery-grid {
     grid-template-columns: 1fr;
+  }
+
+  .lookbook-stack {
+    gap: 4rem;
+  }
+
+  .lookbook-project__img-wrap {
+    height: 280px;
+  }
+
+  .lookbook-breakdown {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
   }
 
   .project-layout {
