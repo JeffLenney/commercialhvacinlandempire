@@ -1281,6 +1281,12 @@ a {
   width: 100%;
 }
 
+/* Strip browser default figure margin */
+.lookbook-result,
+.lookbook-process-img {
+  margin: 0;
+}
+
 /* Result hero image (the "after" / finished photo) */
 .lookbook-result {
   position: relative;
