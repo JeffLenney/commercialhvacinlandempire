@@ -1267,6 +1267,44 @@ a {
   background: var(--white);
 }
 
+/* ---------- Case Study Deep-Link Callout ---------- */
+.case-study-cta {
+  background: var(--off-white);
+  border-left: 3px solid var(--slate-blue);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  padding: 1rem 1.5rem;
+  margin-top: 2rem;
+  max-width: 680px;
+}
+
+.case-study-cta__label {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--slate-blue);
+  margin-bottom: 0.4rem;
+}
+
+.case-study-cta p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+.case-study-cta p a {
+  color: var(--slate-blue);
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+}
+
+.case-study-cta p a:hover {
+  opacity: 0.8;
+}
+
 /* ---------- Lookbook Gallery (Single-Page) ---------- */
 .lookbook-stack {
   display: flex;
