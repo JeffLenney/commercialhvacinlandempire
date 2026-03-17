@@ -50,24 +50,24 @@
     <priority>0.9</priority>
   </url>
 
-  <!-- Knowledge hub -->
+  <!-- Gallery & Knowledge Hub -->
   <url>
-    <loc>https://garageprosoc.com/knowledge/</loc>
+    <loc>https://garageprosoc.com/gallery/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://garageprosoc.com/knowledge/diy-vs-industrial-epoxy/</loc>
+    <loc>https://garageprosoc.com/gallery/diy-vs-industrial-epoxy/</loc>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://garageprosoc.com/knowledge/why-diamond-grinding-matters/</loc>
+    <loc>https://garageprosoc.com/gallery/why-diamond-grinding-matters/</loc>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://garageprosoc.com/knowledge/preventing-hot-tire-pickup/</loc>
+    <loc>https://garageprosoc.com/gallery/preventing-hot-tire-pickup/</loc>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>

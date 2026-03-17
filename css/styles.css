@@ -1271,7 +1271,7 @@ a {
 .lookbook-stack {
   display: flex;
   flex-direction: column;
-  gap: 6rem;
+  gap: 2rem;
   margin-top: 3rem;
 }
 
@@ -1466,7 +1466,7 @@ a {
   }
 
   .lookbook-stack {
-    gap: 4rem;
+    gap: 1.5rem;
   }
 
   .lookbook-result {
