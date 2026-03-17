@@ -1281,41 +1281,77 @@ a {
   width: 100%;
 }
 
-.lookbook-project__img-wrap {
+/* Result hero image (the "after" / finished photo) */
+.lookbook-result {
   position: relative;
   width: 100%;
-  height: 500px;
+  height: 480px;
   border-radius: var(--radius-lg);
   overflow: hidden;
   background: linear-gradient(135deg, #6B7280 0%, #4B5563 100%);
-  margin-bottom: 2rem;
+  margin: 0 0 0.875rem;
   box-shadow: var(--shadow-lg);
 }
 
-/* Fallback text when project photo is not yet uploaded */
-.lookbook-project__img-wrap::after {
-  content: 'Project Photo Coming Soon';
-  position: absolute;
-  inset: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: var(--font);
-  font-size: 0.85rem;
-  font-weight: 600;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: rgba(255,255,255,0.7);
-  z-index: 0;
-}
-
-.lookbook-project__img-wrap img {
-  position: relative;
-  z-index: 1;
+.lookbook-result img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
+}
+
+.lookbook-result figcaption {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  background: rgba(0, 0, 0, 0.52);
+  color: #fff;
+  font-size: 0.65rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 0.3rem 0.7rem;
+  border-radius: var(--radius);
+  backdrop-filter: blur(6px);
+}
+
+/* Challenge + Solution images side-by-side */
+.lookbook-process-imgs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.875rem;
+  margin-bottom: 2rem;
+}
+
+.lookbook-process-img {
+  position: relative;
+  border-radius: var(--radius);
+  overflow: hidden;
+  height: 210px;
+  background: linear-gradient(135deg, #6B7280 0%, #4B5563 100%);
+  box-shadow: var(--shadow);
+}
+
+.lookbook-process-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.lookbook-process-img figcaption {
+  position: absolute;
+  bottom: 0.75rem;
+  left: 0.75rem;
+  background: rgba(0, 0, 0, 0.52);
+  color: #fff;
+  font-size: 0.65rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 0.25rem 0.6rem;
+  border-radius: var(--radius);
+  backdrop-filter: blur(6px);
 }
 
 .lookbook-project__city {
@@ -1427,8 +1463,12 @@ a {
     gap: 4rem;
   }
 
-  .lookbook-project__img-wrap {
-    height: 280px;
+  .lookbook-result {
+    height: 260px;
+  }
+
+  .lookbook-process-img {
+    height: 145px;
   }
 
   .lookbook-breakdown {
