@@ -134,17 +134,20 @@ a {
 .nav-dropdown__menu {
   display: none;
   position: absolute;
-  top: calc(100% + 0.6rem);
+  top: 100%;
   left: 50%;
   transform: translateX(-50%);
   background: var(--charcoal);
   border: 1px solid rgba(255,255,255,0.12);
   border-radius: var(--radius);
-  min-width: 180px;
-  padding: 0.4rem 0;
+  min-width: 340px;
+  /* top padding creates visual gap while keeping hover area continuous */
+  padding: 0.75rem 0 0.4rem;
   list-style: none;
   z-index: 300;
   box-shadow: 0 8px 24px rgba(0,0,0,0.35);
+  columns: 2;
+  column-gap: 0;
 }
 
 .nav-dropdown:hover .nav-dropdown__menu {
