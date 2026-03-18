@@ -147,8 +147,7 @@ a {
   box-shadow: 0 8px 24px rgba(0,0,0,0.35);
 }
 
-.nav-dropdown:hover .nav-dropdown__menu,
-.nav-dropdown:focus-within .nav-dropdown__menu {
+.nav-dropdown:hover .nav-dropdown__menu {
   display: block;
 }
 
