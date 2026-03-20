@@ -1,100 +1,78 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-  <!-- Core pages -->
+  <!-- Core Pages -->
   <url>
-    <loc>https://garageprosoc.com/</loc>
-    <changefreq>monthly</changefreq>
+    <loc>https://commercialhvacinlandempire.com/</loc>
+    <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://garageprosoc.com/about/</loc>
+    <loc>https://commercialhvacinlandempire.com/services/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://garageprosoc.com/process/</loc>
+    <loc>https://commercialhvacinlandempire.com/locations/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://garageprosoc.com/contact/</loc>
+    <loc>https://commercialhvacinlandempire.com/about/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://commercialhvacinlandempire.com/contact/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
-  <!-- Service areas -->
+  <!-- Location Pages -->
   <url>
-    <loc>https://garageprosoc.com/locations/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://garageprosoc.com/locations/irvine/</loc>
+    <loc>https://commercialhvacinlandempire.com/locations/ontario/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://garageprosoc.com/locations/newport-beach/</loc>
+    <loc>https://commercialhvacinlandempire.com/locations/fontana/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://garageprosoc.com/locations/anaheim/</loc>
+    <loc>https://commercialhvacinlandempire.com/locations/rancho-cucamonga/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://garageprosoc.com/locations/fullerton/</loc>
+    <loc>https://commercialhvacinlandempire.com/locations/rialto/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://garageprosoc.com/locations/huntington-beach/</loc>
+    <loc>https://commercialhvacinlandempire.com/locations/san-bernardino/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://garageprosoc.com/locations/laguna-niguel/</loc>
+    <loc>https://commercialhvacinlandempire.com/locations/riverside/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://garageprosoc.com/locations/lake-forest/</loc>
+    <loc>https://commercialhvacinlandempire.com/locations/corona/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://garageprosoc.com/locations/mission-viejo/</loc>
+    <loc>https://commercialhvacinlandempire.com/locations/moreno-valley/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://garageprosoc.com/locations/yorba-linda/</loc>
+    <loc>https://commercialhvacinlandempire.com/locations/redlands/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-  </url>
-
-  <!-- Gallery & Knowledge Hub -->
-  <url>
-    <loc>https://garageprosoc.com/gallery/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://garageprosoc.com/gallery/diy-vs-industrial-epoxy/</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://garageprosoc.com/gallery/why-diamond-grinding-matters/</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://garageprosoc.com/gallery/preventing-hot-tire-pickup/</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
   </url>
 
 </urlset>

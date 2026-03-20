@@ -1,329 +1,438 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-QHRPL526B1"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact IE Commercial HVAC — 24/7 Emergency Dispatch | Inland Empire</title>
+  <meta name="description" content="Contact IE Commercial HVAC for commercial HVAC service, RTU repair, and emergency dispatch across the Inland Empire. Available 24/7 for warehouse and industrial facilities." />
+  <link rel="canonical" href="https://commercialhvacinlandempire.com/contact/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://commercialhvacinlandempire.com/contact/" />
+  <meta property="og:title" content="Contact IE Commercial HVAC — 24/7 Emergency Dispatch | Inland Empire" />
+  <meta property="og:description" content="Contact IE Commercial HVAC for commercial HVAC service, RTU repair, and emergency dispatch across the Inland Empire. Available 24/7 for warehouse and industrial facilities." />
+  <meta property="og:site_name" content="IE Commercial HVAC" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Contact IE Commercial HVAC — 24/7 Emergency Dispatch | Inland Empire" />
+  <meta name="twitter:description" content="Contact IE Commercial HVAC for commercial HVAC service, RTU repair, and emergency dispatch across the Inland Empire. Available 24/7 for warehouse and industrial facilities." />
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
   <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-QHRPL526B1');
-  </script>
-  <meta charset="UTF-8">
-  <link rel="icon" type="image/png" href="../images/garage-pros-favicon.png">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Request a free garage floor coating quote from Garage Pros OC. We serve Irvine, Newport Beach, Anaheim, Fullerton, and all of Orange County with 100% solids epoxy and the ArmorClad system.">
-    <link rel="canonical" href="https://garageprosoc.com/contact/">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://garageprosoc.com/contact/">
-    <meta property="og:title" content="Get a Free Quote | Garage Pros OC  -  Orange County Epoxy Coating">
-    <meta property="og:description" content="Request a free garage floor coating quote from Garage Pros OC. We serve Irvine, Newport Beach, Anaheim, Fullerton, and all of Orange County with 100% solids epoxy and the ArmorClad system.">
-    <meta property="og:image" content="https://garageprosoc.com/images/epoxy-flooring-orange-county-california-installation-company.jpg">
-    <meta property="og:site_name" content="Garage Pros OC">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Get a Free Quote | Garage Pros OC  -  Orange County Epoxy Coating">
-    <meta name="twitter:description" content="Request a free garage floor coating quote from Garage Pros OC. We serve Irvine, Newport Beach, Anaheim, Fullerton, and all of Orange County with 100% solids epoxy and the ArmorClad system.">
-    <meta name="twitter:image" content="https://garageprosoc.com/images/epoxy-flooring-orange-county-california-installation-company.jpg">
-  <title>Get a Free Quote | Garage Pros OC  -  Orange County Epoxy Coating</title>
-  <!-- LocalBusiness Schema -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "Garage Pros OC",
-    "description": "Orange County's premier garage floor coating specialists. Industrial-grade ArmorClad epoxy systems for residential and commercial spaces throughout OC.",
-    "url": "https://garageprosoc.com/",
-    "areaServed": [
-      "Irvine, CA",
-      "Newport Beach, CA",
-      "Anaheim, CA",
-      "Fullerton, CA",
-      "Orange County, CA"
-    ],
-    "serviceArea": {
-      "@type": "GeoCircle",
-      "geoMidpoint": {
-        "@type": "GeoCoordinates",
-        "latitude": 33.7175,
-        "longitude": -117.8311
-      },
-      "geoRadius": "32000"
-    },
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Orange County",
-      "addressRegion": "CA",
-      "addressCountry": "US"
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy:   '#0f172a',
+            orange: '#f97316',
+            slate:  '#475569',
+          }
+        }
+      }
     }
-  }
   </script>
 
-  <link rel="stylesheet" href="../css/styles.css?v=7">
+  <link rel="stylesheet" href="../css/styles.css" />
+
+  <style>
+    /* Scoped overrides so Tailwind and the shared stylesheet coexist cleanly */
+    .contact-hero {
+      background-color: #0f172a;
+      padding: 3.5rem 1rem;
+      text-align: center;
+    }
+    .contact-hero h1 { color: #fff; font-size: clamp(2rem, 5vw, 3rem); font-weight: 800; margin-bottom: .75rem; }
+    .contact-hero p  { color: #cbd5e1; font-size: 1.125rem; }
+
+    .info-cards-section { background: #f8fafc; padding: 3rem 1rem; }
+    .info-cards-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem; max-width: 1100px; margin: 0 auto; }
+
+    .info-card { background: #fff; border-radius: 1rem; padding: 2rem; box-shadow: 0 2px 12px rgba(0,0,0,.07); position: relative; }
+    .info-card::before { content: ''; display: block; height: 4px; border-radius: 1rem 1rem 0 0; position: absolute; top: 0; left: 0; right: 0; }
+    .info-card--orange::before { background: #f97316; }
+    .info-card--navy::before   { background: #0f172a; }
+    .info-card--slate::before  { background: #475569; }
+
+    .info-card-icon { font-size: 2rem; margin-bottom: .75rem; }
+    .info-card h2   { font-size: 1.2rem; font-weight: 700; color: #0f172a; margin-bottom: .75rem; }
+    .info-card a    { color: #f97316; text-decoration: none; }
+    .info-card a:hover { text-decoration: underline; }
+    .info-card .phone { font-size: 1.6rem; font-weight: 800; color: #f97316; display: block; margin-bottom: .5rem; }
+    .info-card ul   { list-style: none; padding: 0; margin: .5rem 0 0; }
+    .info-card ul li { font-size: .9rem; color: #475569; margin-bottom: .3rem; }
+    .info-card ul li::before { content: '✔  '; color: #f97316; }
+
+    .email-label { font-size: .7rem; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; color: #94a3b8; display: block; margin-top: .75rem; }
+    .email-addr  { font-weight: 700; font-size: 1rem; }
+
+    /* Form */
+    .form-section { background: #fff; padding: 3.5rem 1rem; }
+    .form-wrap    { background: #f8fafc; border-radius: 1.25rem; padding: 2.5rem; box-shadow: 0 4px 24px rgba(0,0,0,.08); max-width: 780px; margin: 0 auto; }
+    .form-section h2 { font-size: clamp(1.5rem, 3vw, 2rem); font-weight: 800; color: #0f172a; text-align: center; margin-bottom: .5rem; }
+    .form-section .sub { text-align: center; color: #64748b; margin-bottom: 2rem; }
+
+    .field-row  { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; margin-bottom: 1.25rem; }
+    @media (max-width: 580px) { .field-row { grid-template-columns: 1fr; } }
+    .field-full { margin-bottom: 1.25rem; }
+
+    .field-group label { display: block; font-size: .85rem; font-weight: 600; color: #374151; margin-bottom: .35rem; }
+    .field-group label .req { color: #ef4444; }
+    .field-group input,
+    .field-group select,
+    .field-group textarea {
+      width: 100%; padding: .75rem 1rem; border: 1px solid #d1d5db;
+      border-radius: .625rem; font-size: .95rem; background: #fff;
+      transition: border-color .15s, box-shadow .15s;
+      box-sizing: border-box;
+    }
+    .field-group input:focus,
+    .field-group select:focus,
+    .field-group textarea:focus {
+      outline: none; border-color: #f97316;
+      box-shadow: 0 0 0 3px rgba(249,115,22,.15);
+    }
+    .field-group textarea { resize: vertical; min-height: 130px; }
+
+    .submit-btn {
+      display: block; width: 100%; padding: 1.1rem;
+      background: #f97316; color: #fff; font-size: 1.05rem; font-weight: 700;
+      border: none; border-radius: .75rem; cursor: pointer; margin-top: 1.5rem;
+      transition: background .15s, transform .1s;
+    }
+    .submit-btn:hover  { background: #ea6c0a; }
+    .submit-btn:active { transform: scale(.98); }
+    .form-privacy { text-align: center; font-size: .75rem; color: #94a3b8; margin-top: .75rem; }
+
+    /* Cities grid */
+    .cities-section { background: #f8fafc; padding: 3rem 1rem; }
+    .cities-section h2 { font-size: 1.5rem; font-weight: 800; color: #0f172a; text-align: center; margin-bottom: .5rem; }
+    .cities-section .sub { text-align: center; color: #64748b; font-size: .9rem; margin-bottom: 2rem; }
+    .cities-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); gap: .75rem; max-width: 900px; margin: 0 auto; }
+    .city-link {
+      display: block; background: #fff; border: 1px solid #e2e8f0; border-radius: .75rem;
+      padding: 1rem .5rem; text-align: center; font-size: .875rem; font-weight: 600;
+      color: #374151; text-decoration: none; box-shadow: 0 1px 4px rgba(0,0,0,.05);
+      transition: border-color .15s, color .15s;
+    }
+    .city-link:hover { border-color: #f97316; color: #f97316; }
+
+    /* Response commitment */
+    .commitment-section { background: #0f172a; padding: 4rem 1rem; }
+    .commitment-section h2 { font-size: clamp(1.5rem, 3vw, 2rem); font-weight: 800; color: #fff; text-align: center; margin-bottom: .75rem; }
+    .commitment-section .sub { text-align: center; color: #94a3b8; max-width: 640px; margin: 0 auto 2.5rem; }
+    .commitment-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.25rem; max-width: 900px; margin: 0 auto; }
+    .commitment-card { background: rgba(255,255,255,.05); border: 1px solid rgba(255,255,255,.1); border-radius: 1rem; padding: 2rem; text-align: center; }
+    .commitment-card .stat { font-size: 2.25rem; font-weight: 900; color: #f97316; margin-bottom: .4rem; }
+    .commitment-card .label { font-size: 1rem; font-weight: 700; color: #fff; margin-bottom: .5rem; }
+    .commitment-card .desc  { font-size: .85rem; color: #94a3b8; line-height: 1.6; }
+
+    /* Breadcrumb */
+    .breadcrumb-bar { background: #f1f5f9; border-bottom: 1px solid #e2e8f0; padding: .5rem 1rem; }
+    .breadcrumb-inner { max-width: 1100px; margin: 0 auto; }
+    .breadcrumb-list { list-style: none; display: flex; align-items: center; gap: .5rem; margin: 0; padding: 0; font-size: .85rem; color: #64748b; }
+    .breadcrumb-list a { color: #475569; text-decoration: none; }
+    .breadcrumb-list a:hover { color: #f97316; }
+    .breadcrumb-list .sep { color: #94a3b8; }
+
+    /* Emergency banner */
+    .emergency-banner { background: #f97316; color: #fff; text-align: center; padding: .6rem 1rem; font-size: .875rem; font-weight: 600; letter-spacing: .01em; }
+    .emergency-banner a { color: #fff; text-decoration: underline; font-weight: 800; }
+  </style>
 </head>
 <body>
 
-  <!-- ===================== HEADER ===================== -->
+  <!-- Emergency Banner -->
+  <div class="emergency-banner">
+    HVAC Emergency? Call Now: <a href="tel:9099425200">(909) 942-5200</a> &mdash; 24/7 Dispatch Available
+  </div>
+
+  <!-- Header -->
   <header class="site-header">
     <div class="container">
-      <a href="../" class="site-logo"><img src="../images/GarageProsOCLogo.png" alt="Garage Pros OC - Orange County Epoxy Flooring Specialists"></a>
-      <nav aria-label="Main navigation">
-        <ul class="site-nav">
-          <li><a href="../about/">About</a></li>
-          <li><a href="../process/">Our Process</a></li>
-          <li class="nav-dropdown">
-            <a href="../locations/">Locations</a>
-            <ul class="nav-dropdown__menu">
-              <li><a href="../locations/anaheim/">Anaheim Hills</a></li>
-              <li><a href="../locations/fullerton/">Fullerton</a></li>
-              <li><a href="../locations/huntington-beach/">Huntington Beach</a></li>
-              <li><a href="../locations/irvine/">Irvine</a></li>
-              <li><a href="../locations/laguna-niguel/">Laguna Niguel</a></li>
-              <li><a href="../locations/lake-forest/">Lake Forest</a></li>
-              <li><a href="../locations/mission-viejo/">Mission Viejo</a></li>
-              <li><a href="../locations/newport-beach/">Newport Beach</a></li>
-              <li><a href="../locations/yorba-linda/">Yorba Linda</a></li>
-            </ul>
-          </li>
-          <li><a href="../gallery/">Gallery</a></li>
-          <li><a href="../contact/" class="nav-cta">Get a Quote</a></li>
-        </ul>
-      </nav>
+      <div class="header-inner">
+        <a href="/" class="site-logo">
+          <span class="logo-icon">❄</span>
+          <div class="logo-text">
+            <span class="logo-main">IE Commercial HVAC</span>
+            <span class="logo-sub">Inland Empire's Industrial HVAC Experts</span>
+          </div>
+        </a>
+        <nav class="main-nav" id="main-nav">
+          <a href="/services/" class="nav-link">Services</a>
+          <a href="/locations/" class="nav-link">Locations</a>
+          <a href="/about/" class="nav-link">About</a>
+          <a href="/contact/" class="nav-link">Contact</a>
+        </nav>
+        <a href="tel:9099425200" class="btn-emergency">
+          <span>⚡ 24/7 Emergency</span>
+          <strong>(909) 942-5200</strong>
+        </a>
+        <button class="mobile-menu-btn" onclick="document.getElementById('main-nav').classList.toggle('open')">☰</button>
+      </div>
     </div>
   </header>
 
   <main>
 
-    <!-- ===================== HERO ===================== -->
-    <section class="hero">
-      <div class="container">
-        <div class="hero-eyebrow">No-Pressure Consultation</div>
-        <h1>Get Your <em>Free Quote</em><br>in Under 24 Hours</h1>
-        <p>Tell us about your project and a Garage Pros OC specialist will follow up with a detailed, itemized quote  -  no surprise fees, no commission-driven upsells.</p>
-        <div class="trust-strip">
-          <div class="trust-item">
-            <span class="trust-icon">✔</span>
-            <span>Free on-site slab assessment</span>
-          </div>
-          <div class="trust-item">
-            <span class="trust-icon">✔</span>
-            <span>Transparent itemized quote</span>
-          </div>
-          <div class="trust-item">
-            <span class="trust-icon">✔</span>
-            <span>No obligation, no pressure</span>
-          </div>
-        </div>
+    <!-- Breadcrumb -->
+    <div class="breadcrumb-bar">
+      <div class="breadcrumb-inner">
+        <nav aria-label="Breadcrumb">
+          <ol class="breadcrumb-list" itemscope itemtype="https://schema.org/BreadcrumbList">
+            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+              <a href="/" itemprop="item"><span itemprop="name">Home</span></a>
+              <meta itemprop="position" content="1" />
+            </li>
+            <li class="sep" aria-hidden="true">/</li>
+            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+              <span itemprop="name">Contact</span>
+              <meta itemprop="position" content="2" />
+            </li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Hero -->
+    <section class="contact-hero">
+      <div>
+        <h1>Get In Touch</h1>
+        <p>Fast response for commercial &amp; industrial HVAC needs across the Inland Empire</p>
       </div>
     </section>
 
-    <!-- ===================== FORM + SIDEBAR ===================== -->
-    <section class="section">
-      <div class="container">
-        <div class="two-col" style="gap:3rem;align-items:start">
+    <!-- Contact Info Cards -->
+    <section class="info-cards-section">
+      <div class="info-cards-grid">
 
-          <!-- FORM -->
-          <div>
-            <p class="section-label">Request a Quote</p>
-            <h2 class="section-title">Tell Us About Your Project</h2>
-            <p style="color:var(--text-muted);margin-bottom:2rem;line-height:1.7">Fill out the form below and we will respond to your inquiry via email within 24 hours to schedule your free on-site assessment. All fields marked with * are required.</p>
-
-            <form class="form-wrap" method="POST" action="https://formspree.io/f/xgonljpq" style="border:none;box-shadow:none;padding:0">
-              <div class="form-row">
-                <div class="form-group">
-                  <label for="full-name">Full Name *</label>
-                  <input type="text" id="full-name" name="full_name" placeholder="Jane Smith" required autocomplete="name">
-                </div>
-                <div class="form-group">
-                  <label for="phone">Phone Number <span style="font-weight:400;color:var(--text-muted)">(optional)</span></label>
-                  <input type="tel" id="phone" name="phone" placeholder="(555) 555-5555" autocomplete="tel">
-                </div>
-              </div>
-
-              <div class="form-row">
-                <div class="form-group">
-                  <label for="city">City *</label>
-                  <input type="text" id="city" name="city" placeholder="e.g. Irvine, Newport Beach…" required autocomplete="address-level2">
-                </div>
-                <div class="form-group">
-                  <label for="email">Email Address *</label>
-                  <input type="email" id="email" name="email" placeholder="jane@example.com" required autocomplete="email">
-                </div>
-              </div>
-
-              <div class="form-group">
-                <label for="job-type">Job Type *</label>
-                <select id="job-type" name="job_type" required>
-                  <option value="" disabled selected>Select a service…</option>
-                  <option value="garage-floor-coating">Garage Floor Coating</option>
-                  <option value="patio-coating">Patio / Outdoor Concrete Coating</option>
-                  <option value="driveway-coating">Driveway Coating</option>
-                  <option value="commercial">Commercial / Industrial Floor</option>
-                  <option value="concrete-restoration">Concrete Restoration &amp; Repair</option>
-                  <option value="other">Other  -  I&rsquo;ll Describe Below</option>
-                </select>
-              </div>
-
-              <div class="form-group">
-                <label for="garage-size">Approximate Garage Size</label>
-                <select id="garage-size" name="garage_size">
-                  <option value="" disabled selected>Select size (optional)…</option>
-                  <option value="1-car">1-Car Garage (approx. 200–250 sq ft)</option>
-                  <option value="2-car">2-Car Garage (approx. 400–500 sq ft)</option>
-                  <option value="3-car">3-Car Garage (approx. 600–750 sq ft)</option>
-                  <option value="4-car-plus">4-Car or Larger (750+ sq ft)</option>
-                  <option value="unsure">Not Sure</option>
-                </select>
-              </div>
-
-              <div class="form-group">
-                <label for="message">Additional Details</label>
-                <textarea id="message" name="message" placeholder="Tell us about your project  -  existing coating, any cracks, preferred colors, HOA requirements, or anything else we should know…"></textarea>
-              </div>
-
-              <button type="submit" class="cta-button form-submit">Send My Quote Request</button>
-
-              <p class="form-privacy">
-                We respect your privacy. Your information is only used to respond to your quote request and will never be sold to third parties.
-              </p>
-            </form>
-          </div>
-
-          <!-- SIDEBAR -->
-          <div>
-            <div class="highlight-box" style="margin-bottom:1.5rem">
-              <h3>What Happens Next</h3>
-              <ul>
-                <li>A specialist reviews your request within 24 hours</li>
-                <li>We respond via email to schedule your free on-site slab assessment</li>
-                <li>Your installer inspects the concrete and discusses color options</li>
-                <li>You receive a written, itemized quote  -  no surprises</li>
-                <li>Schedule installation at your convenience</li>
-              </ul>
-            </div>
-
-            <div class="highlight-box" style="margin-bottom:1.5rem">
-              <h3>Service Areas</h3>
-              <ul>
-                <li><a href="../locations/irvine/">Irvine</a>  -  HOA-approved colors</li>
-                <li><a href="../locations/newport-beach/">Newport Beach</a>  -  UV-stable coastal finishes</li>
-                <li><a href="../locations/anaheim/">Anaheim &amp; Anaheim Hills</a>  -  Family-tough durability</li>
-                <li><a href="../locations/fullerton/">Fullerton</a>  -  Historic home restoration</li>
-                <li>Orange, Tustin, Lake Forest, Mission Viejo, and more</li>
-              </ul>
-            </div>
-
-            <div class="local-feature" style="margin:0">
-              <h3>Ready to Start?</h3>
-              <p>Use the form above or email us directly. We will respond to your inquiry via email within 24 hours.</p>
-              <p style="margin-top:0.75rem"><a href="#" class="contact-email" style="color:var(--slate-blue);font-weight:600"></a></p>
-            </div>
-          </div>
-
+        <!-- Emergency Dispatch -->
+        <div class="info-card info-card--orange">
+          <div class="info-card-icon">⚡</div>
+          <h2>Emergency Dispatch</h2>
+          <a href="tel:9099425200" class="phone">(909) 942-5200</a>
+          <ul>
+            <li>Available 24 hours a day, 7 days a week</li>
+            <li>2-hour on-site response target</li>
+            <li>Live dispatchers — no voicemail runaround</li>
+          </ul>
         </div>
+
+        <!-- Email -->
+        <div class="info-card info-card--navy">
+          <div class="info-card-icon">✉</div>
+          <h2>Email Us</h2>
+          <span class="email-label">Service &amp; Dispatch</span>
+          <a href="mailto:dispatch@iecohvac.com" class="email-addr">dispatch@iecohvac.com</a>
+          <span class="email-label">Quotes &amp; Sales</span>
+          <a href="mailto:sales@iecohvac.com" class="email-addr">sales@iecohvac.com</a>
+          <ul style="margin-top:.75rem;">
+            <li>Typical reply within 2 business hours</li>
+          </ul>
+        </div>
+
+        <!-- Service Area -->
+        <div class="info-card info-card--slate">
+          <div class="info-card-icon">📍</div>
+          <h2>Service Area</h2>
+          <p style="font-size:.9rem;color:#475569;line-height:1.6;margin-bottom:.75rem;">
+            All Inland Empire cities — Ontario, Fontana, Rancho Cucamonga, Riverside,
+            San Bernardino, Corona, Moreno Valley, Rialto, and Redlands.
+          </p>
+          <p style="font-size:.875rem;font-weight:700;color:#475569;">I-10 / I-15 / SR-91 Corridors</p>
+          <p style="font-size:.8rem;color:#94a3b8;margin-top:.25rem;">Ontario to Redlands — we come to you.</p>
+        </div>
+
       </div>
     </section>
 
-    <!-- ===================== SYSTEM CALLOUT ===================== -->
-    <section class="section section--alt">
-      <div class="container">
-        <p class="section-label text-center">Every Installation Includes</p>
-        <h2 class="section-title text-center">The Full ArmorClad Industrial System</h2>
-        <p class="section-subtitle text-center" style="margin:0 auto 3rem">Your quote covers a complete 5-step installation  -  not a bare-bones coating job. Here&rsquo;s what&rsquo;s always included.</p>
+    <!-- Lead Form -->
+    <section class="form-section">
+      <h2>Request Service or a Quote</h2>
+      <p class="sub">Fill out the form below and our team will respond promptly.</p>
 
-        <div class="card-grid">
-          <article class="card">
-            <div class="card-icon">💎</div>
-            <h3>Diamond-Grind Prep</h3>
-            <p>CSP 3 diamond grinding on every project  -  no acid-wash shortcuts that compromise adhesion.</p>
-          </article>
-          <article class="card">
-            <div class="card-icon">🔧</div>
-            <h3>Crack &amp; Spall Repair</h3>
-            <p>All visible cracks and damaged concrete areas addressed before the first coat goes down.</p>
-          </article>
-          <article class="card">
-            <div class="card-icon">🛡️</div>
-            <h3>100% Solids Epoxy Base</h3>
-            <p>The ArmorClad base coat  -  engineered to prevent hot-tire pick-up and chemical penetration.</p>
-          </article>
-          <article class="card">
-            <div class="card-icon">✨</div>
-            <h3>UV-Stable Polyaspartic Seal</h3>
-            <p>The top coat that won&rsquo;t yellow in coastal sun. Full chemical resistance in under 24 hours.</p>
-          </article>
+      <div class="form-wrap">
+        <form action="/contact/thank-you/" method="POST">
+
+          <div class="field-row">
+            <div class="field-group">
+              <label for="name">Full Name <span class="req">*</span></label>
+              <input type="text" id="name" name="name" required autocomplete="name" placeholder="Jane Smith" />
+            </div>
+            <div class="field-group">
+              <label for="company">Company Name <span class="req">*</span></label>
+              <input type="text" id="company" name="company" required autocomplete="organization" placeholder="Acme Logistics" />
+            </div>
+          </div>
+
+          <div class="field-row">
+            <div class="field-group">
+              <label for="phone">Phone Number <span class="req">*</span></label>
+              <input type="tel" id="phone" name="phone" required autocomplete="tel" placeholder="(909) 555-0100" />
+            </div>
+            <div class="field-group">
+              <label for="email">Email Address <span class="req">*</span></label>
+              <input type="email" id="email" name="email" required autocomplete="email" placeholder="jane@company.com" />
+            </div>
+          </div>
+
+          <div class="field-full field-group">
+            <label for="facility_type">Facility Type</label>
+            <select id="facility_type" name="facility_type">
+              <option value="">— Select Facility Type —</option>
+              <option value="warehouse_distribution">Warehouse / Distribution</option>
+              <option value="cold_storage">Cold Storage / Refrigeration</option>
+              <option value="manufacturing">Manufacturing</option>
+              <option value="data_center">Data Center</option>
+              <option value="retail_commercial">Retail / Commercial</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <div class="field-row">
+            <div class="field-group">
+              <label for="square_footage">Est. Square Footage</label>
+              <select id="square_footage" name="square_footage">
+                <option value="">— Select Size —</option>
+                <option value="under_100k">Under 100,000 sq ft</option>
+                <option value="100k_500k">100,000 – 500,000 sq ft</option>
+                <option value="500k_1m">500,000 – 1,000,000 sq ft</option>
+                <option value="1m_2m">1,000,000 – 2,000,000 sq ft</option>
+                <option value="over_2m">Over 2,000,000 sq ft</option>
+              </select>
+            </div>
+            <div class="field-group">
+              <label for="tonnage">Est. Tonnage</label>
+              <select id="tonnage" name="tonnage">
+                <option value="">— Select Tonnage —</option>
+                <option value="under_25">Under 25 tons</option>
+                <option value="25_50">25 – 50 tons</option>
+                <option value="50_100">50 – 100 tons</option>
+                <option value="over_100">Over 100 tons</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="field-full field-group">
+            <label for="service_needed">Service Needed <span class="req">*</span></label>
+            <select id="service_needed" name="service_needed" required>
+              <option value="">— Select Service —</option>
+              <option value="emergency_repair">Emergency Repair</option>
+              <option value="rtu_replacement">RTU Replacement</option>
+              <option value="preventive_maintenance">Preventive Maintenance</option>
+              <option value="r410a_compliance">R-410A Compliance Assessment</option>
+              <option value="new_installation">New Installation</option>
+              <option value="energy_audit">Energy Audit</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <div class="field-full field-group">
+            <label for="message">Additional Details</label>
+            <textarea id="message" name="message"
+              placeholder="Describe your situation — equipment type, urgency level, number of units, or anything else we should know…"></textarea>
+          </div>
+
+          <button type="submit" class="submit-btn">Send Request — We'll Respond Fast</button>
+          <p class="form-privacy">Your information is only used to respond to this request and will never be sold.</p>
+
+        </form>
+      </div>
+    </section>
+
+    <!-- Service Cities Quick Links -->
+    <section class="cities-section">
+      <h2>Cities We Serve</h2>
+      <p class="sub">Commercial HVAC service throughout the Inland Empire</p>
+      <div class="cities-grid">
+        <a href="/locations/ontario/"          class="city-link">Ontario</a>
+        <a href="/locations/fontana/"          class="city-link">Fontana</a>
+        <a href="/locations/rancho-cucamonga/" class="city-link">Rancho<br>Cucamonga</a>
+        <a href="/locations/riverside/"        class="city-link">Riverside</a>
+        <a href="/locations/san-bernardino/"   class="city-link">San<br>Bernardino</a>
+        <a href="/locations/corona/"           class="city-link">Corona</a>
+        <a href="/locations/moreno-valley/"    class="city-link">Moreno<br>Valley</a>
+        <a href="/locations/rialto/"           class="city-link">Rialto</a>
+        <a href="/locations/redlands/"         class="city-link">Redlands</a>
+      </div>
+    </section>
+
+    <!-- Response Time Commitment -->
+    <section class="commitment-section">
+      <h2>Our Response Time Commitment</h2>
+      <p class="sub">When your facility's climate control goes down, every minute costs money. We hold ourselves to strict standards so your operation gets back online fast.</p>
+      <div class="commitment-grid">
+        <div class="commitment-card">
+          <div class="stat">&lt; 15 min</div>
+          <div class="label">Phone Pickup</div>
+          <div class="desc">Live dispatcher answers 24/7 — no voicemail runaround during emergencies.</div>
+        </div>
+        <div class="commitment-card">
+          <div class="stat">2 Hours</div>
+          <div class="label">On-Site Target</div>
+          <div class="desc">Our technicians target a 2-hour arrival window for emergency service calls.</div>
+        </div>
+        <div class="commitment-card">
+          <div class="stat">Same Day</div>
+          <div class="label">Quote Turnaround</div>
+          <div class="desc">Scheduled service requests and quotes turned around the same business day.</div>
         </div>
       </div>
     </section>
 
   </main>
 
-  <!-- ===================== FOOTER ===================== -->
+  <!-- Footer -->
   <footer class="site-footer">
-    <div class="footer-grid">
-      <div class="footer-brand">
-        <a href="../" class="site-logo"><img src="../images/GarageProsOCLogo.png" alt="Garage Pros OC - Orange County Epoxy Flooring Specialists"></a>
-        <p>Orange County&rsquo;s premier garage floor coating specialists. Industrial-grade ArmorClad epoxy systems for residential and commercial spaces throughout OC.</p>
-      </div>
-      <div class="footer-col">
-        <h4>Company</h4>
-        <ul>
-          <li><a href="../">Home</a></li>
-          <li><a href="../about/">About Us</a></li>
-          <li><a href="../process/">Our Process</a></li>
-          <li><a href="../contact/">Contact</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Service Areas</h4>
-        <ul>
-          <li><a href="../locations/">All Locations</a></li>
-          <li><a href="../locations/anaheim/">Anaheim Hills</a></li>
-          <li><a href="../locations/fullerton/">Fullerton</a></li>
-          <li><a href="../locations/huntington-beach/">Huntington Beach</a></li>
-          <li><a href="../locations/irvine/">Irvine</a></li>
-          <li><a href="../locations/laguna-niguel/">Laguna Niguel</a></li>
-          <li><a href="../locations/lake-forest/">Lake Forest</a></li>
-          <li><a href="../locations/mission-viejo/">Mission Viejo</a></li>
-          <li><a href="../locations/newport-beach/">Newport Beach</a></li>
-          <li><a href="../locations/yorba-linda/">Yorba Linda</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Knowledge Hub</h4>
-        <ul>
-          <li><a href="../gallery/">Project Gallery</a></li>
-          <li><a href="../gallery/diy-vs-industrial-epoxy/">DIY vs. Industrial Epoxy</a></li>
-          <li><a href="../gallery/why-diamond-grinding-matters/">Why Diamond Grinding Matters</a></li>
-          <li><a href="../gallery/preventing-hot-tire-pickup/">Stop Hot-Tire Pickup</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Get Started</h4>
-        <ul>
-          <li><a href="../contact/">Free Orange County Quote</a></li>
-          <li><a href="#" class="contact-email"></a></li>
-        </ul>
-        <div class="cta-wrap"><a href="../contact/" class="cta-button footer-cta-btn">Request a Quote</a>
-          <p class="cta-trust">ArmorPoxy System Specialist &nbsp;|&nbsp; 100% Solids Guarantee</p>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="footer-logo">
+            <span class="logo-icon">❄</span>
+            <span>IE Commercial HVAC</span>
+          </div>
+          <p>Industrial HVAC specialists for warehouses, cold storage, and manufacturing facilities across the Inland Empire.</p>
+          <p class="footer-license">CA LIC #1089234 | NATE Certified</p>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="/services/">RTU Installation &amp; Replacement</a></li>
+            <li><a href="/services/">Preventive Maintenance</a></li>
+            <li><a href="/services/">Emergency Repairs</a></li>
+            <li><a href="/services/">R-410A/R-454B Retrofit</a></li>
+            <li><a href="/services/">Cold Storage HVAC</a></li>
+            <li><a href="/services/">Energy Audits</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Service Areas</h4>
+          <ul>
+            <li><a href="/locations/ontario/">Ontario</a></li>
+            <li><a href="/locations/fontana/">Fontana</a></li>
+            <li><a href="/locations/rancho-cucamonga/">Rancho Cucamonga</a></li>
+            <li><a href="/locations/riverside/">Riverside</a></li>
+            <li><a href="/locations/san-bernardino/">San Bernardino</a></li>
+            <li><a href="/locations/corona/">Corona</a></li>
+            <li><a href="/locations/moreno-valley/">Moreno Valley</a></li>
+            <li><a href="/locations/rialto/">Rialto</a></li>
+            <li><a href="/locations/redlands/">Redlands</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <p><strong>24/7 Emergency:</strong><br><a href="tel:9099425200">(909) 942-5200</a></p>
+          <p><strong>Email:</strong><br><a href="mailto:dispatch@iecohvac.com">dispatch@iecohvac.com</a></p>
+          <p><strong>Service Area:</strong><br>Inland Empire, CA<br>I-10 / I-15 / SR-91 Corridors</p>
         </div>
       </div>
-    </div>
-    <div class="footer-bottom">
-      <span>&copy; 2026 Garage Pros OC. All rights reserved.</span>
-      <span>GarageProsOC.com  -  Orange County, CA</span>
+      <div class="footer-bottom">
+        <p>&copy; 2026 IE Commercial HVAC. All rights reserved.</p>
+      </div>
     </div>
   </footer>
 
-  <script>
-  (function() {
-    const u = "garageprosoc";
-    const d = "gmail.com";
-    const elements = document.querySelectorAll(".contact-email");
-    elements.forEach(el => {
-      el.href = "mailto:" + u + "@" + d;
-      el.textContent = u + "@" + d;
-    });
-  })();
-  </script>
 </body>
 </html>

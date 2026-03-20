@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://garageprosoc.com/sitemap.xml
+Sitemap: https://commercialhvacinlandempire.com/sitemap.xml
