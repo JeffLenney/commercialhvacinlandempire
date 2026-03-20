@@ -943,7 +943,7 @@ ul { list-style: none; }
 
 .mission-content p {
   font-size: 1rem;
-  color: var(--slate);
+  color: var(--text-body);
   line-height: 1.8;
   margin-bottom: 1.25rem;
 }
