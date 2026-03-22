@@ -1427,7 +1427,7 @@ ul { list-style: none; }
 .section--nearby { background: var(--bg-light); }
 
 .hero--city { padding: 4rem 0; }
-.hero--locations { padding: 4rem 0; }
+.hero--locations { padding: 7rem 0; }
 .hero-content { position: relative; z-index: 2; }
 
 .city-info-grid {
