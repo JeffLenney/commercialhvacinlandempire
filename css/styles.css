@@ -271,7 +271,7 @@ ul { list-style: none; }
   position: absolute;
   inset: 0;
   pointer-events: none;
-  background: rgba(10,18,35,0.62);
+  background: linear-gradient(to right, rgba(5,10,20,0.82) 0%, rgba(5,10,20,0.72) 60%, rgba(5,10,20,0.55) 100%);
 }
 
 .hero-grid {
