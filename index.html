@@ -4,10 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>IE Commercial HVAC — Inland Empire Industrial HVAC Contractor</title>
-  <meta name="description" content="Commercial HVAC contractor serving warehouses, cold storage, and manufacturing facilities across the Inland Empire. 24/7 emergency dispatch, RTU installation, R-410A compliance. Call (909) 942-5200.">
+  <meta name="description" content="Commercial HVAC contractor serving warehouses, cold storage, and manufacturing facilities across the Inland Empire. Priority Commercial Response, RTU installation, R-410A compliance. Call (909) 942-5200.">
   <link rel="canonical" href="https://commercialhvacinlandempire.com/">
   <meta property="og:title" content="IE Commercial HVAC — Inland Empire Industrial HVAC Contractor">
-  <meta property="og:description" content="24/7 commercial HVAC for warehouses, cold storage &amp; manufacturing across the Inland Empire. RTU installation, emergency repair, R-410A compliance.">
+  <meta property="og:description" content="Priority Commercial Response HVAC for warehouses, cold storage &amp; manufacturing across the Inland Empire. RTU installation, emergency repair, R-410A compliance.">
   <meta property="og:url" content="https://commercialhvacinlandempire.com/">
   <meta property="og:image" content="https://commercialhvacinlandempire.com/images/og-default.jpg">
   <meta property="og:type" content="website">
@@ -26,7 +26,10 @@
     "foundingDate": "2011",
     "openingHours": "Mo-Su 00:00-24:00",
     "license": "CA LIC #1089234",
-    "areaServed": ["Ontario, CA","Fontana, CA","Rancho Cucamonga, CA","Riverside, CA","San Bernardino, CA","Corona, CA","Moreno Valley, CA","Rialto, CA","Redlands, CA"],
+    "areaServed": {
+      "@type": "GeoShape",
+      "polygon": "33.8753,-117.5664 34.1064,-117.7197 34.1888,-117.3273 34.0556,-117.1825 33.8753,-117.5664"
+    },
     "address": { "@type": "PostalAddress", "addressRegion": "CA", "addressCountry": "US" }
   }
   </script>
@@ -169,7 +172,7 @@
 
   <!-- Emergency Banner -->
   <div class="emergency-banner">
-    &#9889; HVAC Emergency? We dispatch in under 15 minutes | <a href="tel:9099425200">(909) 942-5200</a> | 24/7/365
+    &#9889; HVAC Emergency? We dispatch in under 15 minutes | <a href="tel:9099425200">(909) 942-5200</a> | Priority Commercial Response
   </div>
 
   <!-- Header -->
@@ -190,7 +193,7 @@
           <a href="/commercialhvacinlandempire/contact/" class="nav-link">Contact</a>
         </nav>
         <a href="tel:9099425200" class="btn-emergency">
-          <span>&#9889; 24/7 Emergency</span>
+          <span>&#9889; Priority Response</span>
           <strong>(909) 942-5200</strong>
         </a>
         <button class="mobile-menu-btn" onclick="document.getElementById('main-nav').classList.toggle('open')">&#9776;</button>
@@ -206,45 +209,63 @@
         <div>
           <div class="hero-badge">&#10052; CA LIC #1089234 &bull; NATE Certified</div>
           <h1>Inland Empire's <span>#1 Commercial HVAC</span> Contractor</h1>
-          <p class="hero-sub">We keep warehouses, cold storage facilities, and manufacturing plants running across the Inland Empire. 24/7 emergency dispatch, RTU installation, and full R-410A refrigerant compliance.</p>
+          <p class="hero-sub">We keep warehouses, cold storage facilities, and manufacturing plants running across the Inland Empire. Priority Commercial Response, RTU installation, and full R-410A refrigerant compliance.</p>
           <div class="hero-ctas">
             <a href="tel:9099425200" class="btn-primary">&#9889; Call (909) 942-5200</a>
             <a href="/commercialhvacinlandempire/contact/" class="btn-secondary">Get a Free Quote &rarr;</a>
           </div>
         </div>
-        <div class="hero-card">
-          <div class="hero-card-title">Our Response Commitment</div>
-          <div class="hero-stat">
-            <div class="hero-stat-num">&lt;15m</div>
-            <div>
-              <div class="hero-stat-label">Phone Response</div>
-              <div class="hero-stat-sub">Live dispatcher, any hour of the day</div>
-            </div>
-          </div>
-          <div class="hero-stat">
-            <div class="hero-stat-num">2 hr</div>
-            <div>
-              <div class="hero-stat-label">On-Site for Emergencies</div>
-              <div class="hero-stat-sub">Anywhere in the Inland Empire</div>
-            </div>
-          </div>
-          <div class="hero-stat">
-            <div class="hero-stat-num">9</div>
-            <div>
-              <div class="hero-stat-label">IE Cities Covered</div>
-              <div class="hero-stat-sub"><a href="/commercialhvacinlandempire/locations/ontario/" class="city-link-inline">Ontario</a>, <a href="/commercialhvacinlandempire/locations/fontana/" class="city-link-inline">Fontana</a>, <a href="/commercialhvacinlandempire/locations/riverside/" class="city-link-inline">Riverside</a> &amp; more</div>
-            </div>
-          </div>
-          <div class="hero-stat">
-            <div class="hero-stat-num">15yr</div>
-            <div>
-              <div class="hero-stat-label">In Business</div>
-              <div class="hero-stat-sub">IE-based, commercial-only since 2011</div>
-            </div>
-          </div>
-        </div>
+        <div class="lead-form-float">
+  <h3>Schedule a Facility Audit</h3>
+  <p class="form-subtitle">Response within 1 business hour. Emergency? Call <a href="tel:9099425200" style="color:#f97316;font-weight:700;">(909) 942-5200</a>.</p>
+  <form action="/contact/thank-you/" method="POST">
+    <div class="form-group">
+      <label for="hf-name" style="display:block;font-size:.8rem;font-weight:600;color:#0f172a;margin-bottom:.3rem;">Full Name *</label>
+      <input type="text" id="hf-name" name="name" required placeholder="Your name" style="width:100%;padding:.6rem .875rem;border:1.5px solid #e2e8f0;border-radius:.5rem;font-size:.9rem;font-family:inherit;color:#0f172a;background:#fff;box-sizing:border-box;">
+    </div>
+    <div class="form-group" style="margin-top:.75rem;">
+      <label for="hf-phone" style="display:block;font-size:.8rem;font-weight:600;color:#0f172a;margin-bottom:.3rem;">Phone *</label>
+      <input type="tel" id="hf-phone" name="phone" required placeholder="(909) 000-0000" style="width:100%;padding:.6rem .875rem;border:1.5px solid #e2e8f0;border-radius:.5rem;font-size:.9rem;font-family:inherit;color:#0f172a;background:#fff;box-sizing:border-box;">
+    </div>
+    <div class="form-group" style="margin-top:.75rem;">
+      <label for="hf-facility" style="display:block;font-size:.8rem;font-weight:600;color:#0f172a;margin-bottom:.3rem;">Facility Type</label>
+      <select id="hf-facility" name="facility_type" style="width:100%;padding:.6rem .875rem;border:1.5px solid #e2e8f0;border-radius:.5rem;font-size:.9rem;font-family:inherit;color:#0f172a;background:#fff;box-sizing:border-box;">
+        <option value="">Select facility type</option>
+        <option value="warehouse">Warehouse / Distribution</option>
+        <option value="medical">Medical / Healthcare</option>
+        <option value="manufacturing">Manufacturing</option>
+        <option value="cold-storage">Cold Storage</option>
+      </select>
+    </div>
+    <div class="form-group" style="margin-top:.75rem;">
+      <label for="hf-tonnage" style="display:block;font-size:.8rem;font-weight:600;color:#0f172a;margin-bottom:.3rem;">Estimated Tonnage</label>
+      <select id="hf-tonnage" name="tonnage" style="width:100%;padding:.6rem .875rem;border:1.5px solid #e2e8f0;border-radius:.5rem;font-size:.9rem;font-family:inherit;color:#0f172a;background:#fff;box-sizing:border-box;">
+        <option value="">Select tonnage</option>
+        <option value="5-25">5 – 25 Ton</option>
+        <option value="25-50">25 – 50 Ton</option>
+        <option value="50-100">50 – 100 Ton</option>
+        <option value="100plus">100+ Ton</option>
+      </select>
+    </div>
+    <button type="submit" style="margin-top:1rem;width:100%;padding:.875rem;background:#f97316;color:#fff;font-size:1rem;font-weight:800;border:none;border-radius:.5rem;cursor:pointer;font-family:inherit;">Schedule Facility Audit &rarr;</button>
+  </form>
+</div>
       </div>
     </section>
+
+    <!-- Hero Image -->
+    <div style="max-width:1100px;margin:0 auto;padding:0 1.5rem;">
+      <div class="hero-img-wrap">
+        <img
+          src="/commercialhvacinlandempire/images/inland-empire-commercial-hvac-industrial-rooftop-units.jpg"
+          alt="Aerial view of massive industrial warehouse rooftop with rows of commercial RTUs in the Inland Empire logistics corridor."
+          class="hero-img"
+          width="1280"
+          height="720"
+          loading="lazy"
+        >
+      </div>
+    </div>
 
     <!-- Brands bar -->
     <div class="clients-bar">
@@ -276,7 +297,7 @@
         </div>
         <div class="service-card">
           <div class="service-icon">&#9889;</div>
-          <h3>24/7 Emergency Repair</h3>
+          <h3>Priority Commercial Response Repair</h3>
           <p>Live dispatch around the clock. Our crews carry common RTU parts and refrigerants, so most emergency repairs are completed on the first visit — not the third.</p>
           <a href="/commercialhvacinlandempire/contact/" class="service-link">Call now &rarr;</a>
         </div>
@@ -357,42 +378,87 @@
           <p class="section-subtitle" style="margin:0 auto;">From the I-10 corridor to the 215 freeway — we cover every major industrial hub in the IE.</p>
         </div>
       </div>
-      <div class="cities-grid">
-        <a href="/commercialhvacinlandempire/locations/ontario/" class="city-card">
-          <h3>Ontario</h3>
-          <p>Airport Industrial Area</p>
+      <div class="cities-grid" style="grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1.25rem;">
+        <a href="/commercialhvacinlandempire/locations/ontario/" class="city-card" style="padding:0;overflow:hidden;text-align:left;">
+          <div class="city-card-img-wrap">
+            <img src="/commercialhvacinlandempire/images/ontario-ca-warehouse-hvac-rooftop-unit-replacement.jpg" alt="Commercial RTU replacement on a large-scale Ontario CA distribution center." class="city-card-img" loading="lazy" width="400" height="225">
+          </div>
+          <div class="city-card-body">
+            <h3 style="font-size:1rem;font-weight:800;color:#0f172a;margin-bottom:.2rem;">Ontario</h3>
+            <p style="font-size:.8rem;color:#64748b;margin:0;">Airport Industrial Area</p>
+          </div>
         </a>
-        <a href="/commercialhvacinlandempire/locations/fontana/" class="city-card">
-          <h3>Fontana</h3>
-          <p>Steel &amp; Warehouse Corridor</p>
+        <a href="/commercialhvacinlandempire/locations/fontana/" class="city-card" style="padding:0;overflow:hidden;text-align:left;">
+          <div class="city-card-img-wrap">
+            <img src="/commercialhvacinlandempire/images/fontana-rialto-commercial-hvac-warehouse-cooling-systems.jpg" alt="Heavy-duty industrial rooftop unit maintenance on a Fontana warehouse row facility." class="city-card-img" loading="lazy" width="400" height="225">
+          </div>
+          <div class="city-card-body">
+            <h3 style="font-size:1rem;font-weight:800;color:#0f172a;margin-bottom:.2rem;">Fontana</h3>
+            <p style="font-size:.8rem;color:#64748b;margin:0;">Steel &amp; Warehouse Corridor</p>
+          </div>
         </a>
-        <a href="/commercialhvacinlandempire/locations/rancho-cucamonga/" class="city-card">
-          <h3>Rancho Cucamonga</h3>
-          <p>Distribution Centers</p>
+        <a href="/commercialhvacinlandempire/locations/rancho-cucamonga/" class="city-card" style="padding:0;overflow:hidden;text-align:left;">
+          <div class="city-card-img-wrap">
+            <img src="/commercialhvacinlandempire/images/rancho-cucamonga-commercial-hvac-office-park-cooling.jpg" alt="Modern VAV box and ductwork installation for a Rancho Cucamonga office park." class="city-card-img" loading="lazy" width="400" height="225">
+          </div>
+          <div class="city-card-body">
+            <h3 style="font-size:1rem;font-weight:800;color:#0f172a;margin-bottom:.2rem;">Rancho Cucamonga</h3>
+            <p style="font-size:.8rem;color:#64748b;margin:0;">Distribution Centers</p>
+          </div>
         </a>
-        <a href="/commercialhvacinlandempire/locations/riverside/" class="city-card">
-          <h3>Riverside</h3>
-          <p>Manufacturing &amp; Logistics</p>
+        <a href="/commercialhvacinlandempire/locations/riverside/" class="city-card" style="padding:0;overflow:hidden;text-align:left;">
+          <div class="city-card-img-wrap">
+            <img src="/commercialhvacinlandempire/images/riverside-ca-commercial-hvac-medical-university-cooling.jpg" alt="Complex mechanical HVAC systems for institutional and medical facilities in Riverside CA." class="city-card-img" loading="lazy" width="400" height="225">
+          </div>
+          <div class="city-card-body">
+            <h3 style="font-size:1rem;font-weight:800;color:#0f172a;margin-bottom:.2rem;">Riverside</h3>
+            <p style="font-size:.8rem;color:#64748b;margin:0;">Manufacturing &amp; Logistics</p>
+          </div>
         </a>
-        <a href="/commercialhvacinlandempire/locations/san-bernardino/" class="city-card">
-          <h3>San Bernardino</h3>
-          <p>Industrial Parks</p>
+        <a href="/commercialhvacinlandempire/locations/san-bernardino/" class="city-card" style="padding:0;overflow:hidden;text-align:left;">
+          <div class="city-card-img-wrap">
+            <img src="/commercialhvacinlandempire/images/san-bernardino-industrial-ac-service-rooftop-units.jpg" alt="Industrial cooling tower and high-capacity HVAC controls in San Bernardino." class="city-card-img" loading="lazy" width="400" height="225">
+          </div>
+          <div class="city-card-body">
+            <h3 style="font-size:1rem;font-weight:800;color:#0f172a;margin-bottom:.2rem;">San Bernardino</h3>
+            <p style="font-size:.8rem;color:#64748b;margin:0;">Industrial Parks</p>
+          </div>
         </a>
-        <a href="/commercialhvacinlandempire/locations/corona/" class="city-card">
-          <h3>Corona</h3>
-          <p>Business &amp; Tech Parks</p>
+        <a href="/commercialhvacinlandempire/locations/corona/" class="city-card" style="padding:0;overflow:hidden;text-align:left;">
+          <div class="city-card-img-wrap">
+            <img src="/commercialhvacinlandempire/images/corona-ca-commercial-hvac-retail-light-industrial-ac.jpg" alt="Commercial HVAC units on a light industrial and retail center in Corona CA." class="city-card-img" loading="lazy" width="400" height="225">
+          </div>
+          <div class="city-card-body">
+            <h3 style="font-size:1rem;font-weight:800;color:#0f172a;margin-bottom:.2rem;">Corona</h3>
+            <p style="font-size:.8rem;color:#64748b;margin:0;">Business &amp; Tech Parks</p>
+          </div>
         </a>
-        <a href="/commercialhvacinlandempire/locations/moreno-valley/" class="city-card">
-          <h3>Moreno Valley</h3>
-          <p>Logistics Hubs</p>
+        <a href="/commercialhvacinlandempire/locations/moreno-valley/" class="city-card" style="padding:0;overflow:hidden;text-align:left;">
+          <div class="city-card-img-wrap" style="background:linear-gradient(135deg,#1e293b 0%,#0f172a 100%);display:flex;align-items:center;justify-content:center;">
+            <span style="font-size:2.5rem;">&#127981;</span>
+          </div>
+          <div class="city-card-body">
+            <h3 style="font-size:1rem;font-weight:800;color:#0f172a;margin-bottom:.2rem;">Moreno Valley</h3>
+            <p style="font-size:.8rem;color:#64748b;margin:0;">Logistics Hubs</p>
+          </div>
         </a>
-        <a href="/commercialhvacinlandempire/locations/rialto/" class="city-card">
-          <h3>Rialto</h3>
-          <p>Warehouse District</p>
+        <a href="/commercialhvacinlandempire/locations/rialto/" class="city-card" style="padding:0;overflow:hidden;text-align:left;">
+          <div class="city-card-img-wrap">
+            <img src="/commercialhvacinlandempire/images/fontana-rialto-commercial-hvac-warehouse-cooling-systems.jpg" alt="Heavy-duty industrial rooftop unit maintenance on a Rialto warehouse facility." class="city-card-img" loading="lazy" width="400" height="225">
+          </div>
+          <div class="city-card-body">
+            <h3 style="font-size:1rem;font-weight:800;color:#0f172a;margin-bottom:.2rem;">Rialto</h3>
+            <p style="font-size:.8rem;color:#64748b;margin:0;">Warehouse District</p>
+          </div>
         </a>
-        <a href="/commercialhvacinlandempire/locations/redlands/" class="city-card">
-          <h3>Redlands</h3>
-          <p>Cold Storage &amp; Food</p>
+        <a href="/commercialhvacinlandempire/locations/redlands/" class="city-card" style="padding:0;overflow:hidden;text-align:left;">
+          <div class="city-card-img-wrap">
+            <img src="/commercialhvacinlandempire/images/redlands-ca-data-center-hvac-medical-clean-room-cooling.jpg" alt="Precision CRAC unit cooling for a data center and medical lab in Redlands CA." class="city-card-img" loading="lazy" width="400" height="225">
+          </div>
+          <div class="city-card-body">
+            <h3 style="font-size:1rem;font-weight:800;color:#0f172a;margin-bottom:.2rem;">Redlands</h3>
+            <p style="font-size:.8rem;color:#64748b;margin:0;">Cold Storage &amp; Food</p>
+          </div>
         </a>
       </div>
       <div style="text-align:center;margin-top:2.5rem;">
@@ -403,7 +469,7 @@
     <!-- Emergency CTA -->
     <section class="emergency-cta">
       <h2>HVAC Down? We're Available Right Now.</h2>
-      <p>Every hour your HVAC is down costs you in lost productivity, spoiled product, or worker safety. Don't wait — our dispatchers are live 24/7.</p>
+      <p>Every hour your HVAC is down costs you in lost productivity, spoiled product, or worker safety. Don't wait — our dispatchers are always available.</p>
       <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
         <a href="tel:9099425200" class="btn-white">&#9889; (909) 942-5200</a>
         <a href="/commercialhvacinlandempire/contact/" class="btn-outline-white">Request a Quote</a>
